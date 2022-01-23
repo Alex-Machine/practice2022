@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="drivers.controllers.NewOwnerControl">
+    <Pane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: gray;">
+        <Label layoutX="175.0" layoutY="22.0" prefHeight="56.0" prefWidth="251.0" text="Передача ТС">
+            <font>
+                <Font name="Comic Sans MS Italic" size="40.0" />
+            </font>
+        </Label>
+    </Pane>
+    <TextField fx:id="findGUID" layoutX="42.0" layoutY="125.0">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </TextField>
+    <Label layoutX="42.0" layoutY="108.0" text="GUID Владельца">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </Label>
+    <TextField fx:id="findFIO" editable="false" layoutX="42.0" layoutY="215.0">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </TextField>
+    <Label layoutX="42.0" layoutY="198.0" text="ФИО">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </Label>
+    <TextField fx:id="findPhone" editable="false" layoutX="42.0" layoutY="258.0">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </TextField>
+    <Label layoutX="42.0" layoutY="241.0" text="Мобильный телефон">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </Label>
+    <TextField fx:id="findNote" editable="false" layoutX="42.0" layoutY="343.0" prefHeight="46.0" prefWidth="164.0">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </TextField>
+    <Label layoutX="42.0" layoutY="326.0" text="Замечания">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </Label>
+    <Button layoutX="231.0" layoutY="309.0" mnemonicParsing="false" onAction="#onPassOn" prefHeight="35.0" prefWidth="149.0" text="Передать">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </Button>
+    <Label fx:id="createLabel" layoutX="278.0" layoutY="357.0" text="Ошибка">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </Label>
+    <Button layoutX="206.0" layoutY="126.0" mnemonicParsing="false" onAction="#onFindOwner" text="Найти" />
+    <TextField fx:id="findVIN" layoutX="42.0" layoutY="168.0">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </TextField>
+    <Label layoutX="42.0" layoutY="151.0" text="VIN номер автомобиля">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </Label>
+    <TextField fx:id="findTS" editable="false" layoutX="42.0" layoutY="299.0">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </TextField>
+    <Label layoutX="42.0" layoutY="282.0" text="Марка и модель тс">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </Label>
+    <TextField fx:id="findNewOwnerGUID" layoutX="415.0" layoutY="125.0">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </TextField>
+    <Label layoutX="415.0" layoutY="108.0" text="GUID нового владельца">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </Label>
+    <TextField fx:id="newOwnerFIO" editable="false" layoutX="415.0" layoutY="167.0">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </TextField>
+    <Label layoutX="415.0" layoutY="150.0" text="ФИО">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </Label>
+    <TextField fx:id="newOwnerPhone" editable="false" layoutX="415.0" layoutY="210.0">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </TextField>
+    <Label layoutX="415.0" layoutY="193.0" text="Мобильный телефон">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </Label>
+    <TextField fx:id="newOwnerNote" editable="false" layoutX="415.0" layoutY="262.0" prefHeight="46.0" prefWidth="164.0">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </TextField>
+    <Label layoutX="415.0" layoutY="245.0" text="Замечания">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </Label>
+    <Button layoutX="365.0" layoutY="126.0" mnemonicParsing="false" onAction="#onFindNewOwner" text="Найти" />
+    <Button layoutX="206.0" layoutY="168.0" mnemonicParsing="false" onAction="#onFindTS" text="Найти" />
+
+</AnchorPane>

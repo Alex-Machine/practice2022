@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="drivers.controllers.DriverDBController">
+    <ScrollPane prefHeight="400.0" prefWidth="600.0">
+        <TableView fx:id="driverTableView" prefHeight="4850.0" prefWidth="1780.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="30.0" text="id"/>
+                <TableColumn fx:id="nameColumn" prefWidth="142.0" text="name"/>
+                <TableColumn fx:id="middlenameColumn" prefWidth="83.0" text="middlename"/>
+                <TableColumn fx:id="passportSerialColumn" prefWidth="96.0" text="passport_serial"/>
+                <TableColumn fx:id="passportNumberColumn" prefWidth="108.0" text="passport_number"/>
+                <TableColumn fx:id="postcodeColumn" prefWidth="63.0" text="postcode"/>
+                <TableColumn fx:id="addressColumn" prefWidth="178.0" text="address"/>
+                <TableColumn fx:id="addressLifeColumn" prefWidth="178.0" text="address_life"/>
+                <TableColumn fx:id="companyColumn" prefWidth="185.0" text="company"/>
+                <TableColumn fx:id="jobnameColumn" prefWidth="200.0" text="jobname"/>
+                <TableColumn fx:id="phoneColumn" prefWidth="120.0" text="phone"/>
+                <TableColumn fx:id="emailColumn" prefWidth="145.0" text="email"/>
+                <TableColumn fx:id="photoColumn" prefWidth="120.0" text="photo"/>
+                <TableColumn fx:id="descriptionColumn" prefWidth="105.0" text="description"/>
+            </columns>
+        </TableView>
+    </ScrollPane>
+</AnchorPane>
